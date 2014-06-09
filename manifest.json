@@ -1,0 +1,17 @@
+{
+  "name": "Youtube to PlayIt",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "This extension converts embedded Youtube videos and links to Playit.pk videos",
+  "icons": {
+  	"16" : "icon.png",
+  	"48" : "icon@48.png",
+  	"128" : "icon@128.png"
+  },
+  "content_scripts": [
+    {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"]
+    }
+	]
+}
