@@ -19,7 +19,7 @@ for (var i=0,imax=embeds.length; i<imax; i++) {
 var links = document.getElementsByTagName("a"); //array
 var regexL = /youtube\.com\/(watch|embed|v)\?v=(.+)$/i;
 for (var i=0,imax=links.length; i<imax; i++) {
-	if(links[i].src.indexOf("youtube.com/") !== -1 ){
+	if(links[i].href.indexOf("youtube.com/") !== -1 ){
   	links[i].href = links[i].href.replace(regexL,"playit\.pk/$1\?v=$2");
   }
 }
